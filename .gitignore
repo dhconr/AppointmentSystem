@@ -1,1 +1,5 @@
 .vs
+.vs\AppointmentSystem
+AppointmentSystem\bin
+AppointmentSystem\obj
+
