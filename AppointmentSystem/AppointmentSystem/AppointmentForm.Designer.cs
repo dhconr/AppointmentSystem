@@ -36,6 +36,8 @@
             ThursdayLabel = new Label();
             FridayLabel = new Label();
             SaturdayLabel = new Label();
+            ViewChangeButton = new Button();
+            AddAppointmentButton = new Button();
             SuspendLayout();
             // 
             // DaysContainer
@@ -115,12 +117,36 @@
             SaturdayLabel.TabIndex = 7;
             SaturdayLabel.Text = "Saturday";
             // 
+            // ViewChangeButton
+            // 
+            ViewChangeButton.Font = new Font("Sans Serif Collection", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ViewChangeButton.Location = new Point(12, 744);
+            ViewChangeButton.Name = "ViewChangeButton";
+            ViewChangeButton.Size = new Size(155, 78);
+            ViewChangeButton.TabIndex = 8;
+            ViewChangeButton.Text = "Change view to Weekly";
+            ViewChangeButton.UseVisualStyleBackColor = true;
+            ViewChangeButton.Click += ViewChangeButton_Click;
+            // 
+            // AddAppointmentButton
+            // 
+            AddAppointmentButton.Font = new Font("Sans Serif Collection", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            AddAppointmentButton.Location = new Point(1056, 744);
+            AddAppointmentButton.Name = "AddAppointmentButton";
+            AddAppointmentButton.Size = new Size(155, 78);
+            AddAppointmentButton.TabIndex = 9;
+            AddAppointmentButton.Text = "Add Appointment";
+            AddAppointmentButton.UseVisualStyleBackColor = true;
+            AddAppointmentButton.Click += AddAppointmentButton_Click;
+            // 
             // AppointmentForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(1228, 834);
+            Controls.Add(AddAppointmentButton);
+            Controls.Add(ViewChangeButton);
             Controls.Add(SaturdayLabel);
             Controls.Add(FridayLabel);
             Controls.Add(ThursdayLabel);
@@ -146,5 +172,7 @@
         private Label ThursdayLabel;
         private Label FridayLabel;
         private Label SaturdayLabel;
+        private Button ViewChangeButton;
+        private Button AddAppointmentButton;
     }
 }
