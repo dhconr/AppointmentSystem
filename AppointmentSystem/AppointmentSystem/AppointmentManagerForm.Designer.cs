@@ -36,7 +36,7 @@
             label3 = new Label();
             textBox2 = new TextBox();
             LogInBtn = new Button();
-            AppointmentCancelButtonn = new Button();
+            AppointmentCancelButton = new Button();
             SuspendLayout();
             // 
             // usernameInput
@@ -114,22 +114,23 @@
             LogInBtn.Text = "Add";
             LogInBtn.UseVisualStyleBackColor = true;
             // 
-            // AppointmentCancelButtonn
+            // AppointmentCancelButton
             // 
-            AppointmentCancelButtonn.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
-            AppointmentCancelButtonn.Location = new Point(392, 590);
-            AppointmentCancelButtonn.Name = "AppointmentCancelButtonn";
-            AppointmentCancelButtonn.Size = new Size(220, 58);
-            AppointmentCancelButtonn.TabIndex = 10;
-            AppointmentCancelButtonn.Text = "Cancel";
-            AppointmentCancelButtonn.UseVisualStyleBackColor = true;
+            AppointmentCancelButton.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            AppointmentCancelButton.Location = new Point(392, 590);
+            AppointmentCancelButton.Name = "AppointmentCancelButton";
+            AppointmentCancelButton.Size = new Size(220, 58);
+            AppointmentCancelButton.TabIndex = 10;
+            AppointmentCancelButton.Text = "Cancel";
+            AppointmentCancelButton.UseVisualStyleBackColor = true;
+            AppointmentCancelButton.Click += AppointmentCancelButton_Click;
             // 
             // AppointmentManagerForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(888, 671);
-            Controls.Add(AppointmentCancelButtonn);
+            Controls.Add(AppointmentCancelButton);
             Controls.Add(LogInBtn);
             Controls.Add(textBox2);
             Controls.Add(label3);
@@ -154,6 +155,6 @@
         private Label label3;
         private TextBox textBox2;
         private Button LogInBtn;
-        private Button AppointmentCancelButtonn;
+        private Button AppointmentCancelButton;
     }
 }
