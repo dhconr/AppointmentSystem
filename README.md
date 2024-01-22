@@ -1,1 +1,1 @@
-# AppointmentSystem_WGU
+# AppointmentSystem
